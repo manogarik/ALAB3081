@@ -63,4 +63,47 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
 
   console.log("The reminder after performing the arithmetic chain  - " + calculate);
 
+
+  //PART2
+
+  const distance = 1500 ; 
+  const mph1 = 55 ;
+  const mph2 = 60;
+  const mph3 = 75;
+  const gallonsat55 = 30;
+  const gallonsat60 = 28;
+  const gallonsat75 = 23;
+  const galloncost = 3;
+ 
+  //Gallons needed for the entire trip 
+
+   const totalgallonsat55 = distance/gallonsat55 ;
+   console.log("Gallons needed for the entire trip when travelling at 55mph " +  totalgallonsat55 ) ;
+   const totalgallonsat60 = distance/gallonsat60  ;
+   console.log("Gallons needed for the entire trip when travelling at 55mph " + totalgallonsat60 );
+   const totalgallonsat75 = distance/gallonsat75 ;
+   console.log("Gallons needed for the entire trip when travelling at 55mph " + totalgallonsat75 );
   
+   //calculating the total cost for the entire trip
+
+   const Totalcostat55 = totalgallonsat55 * galloncost ;
+   console.log("Total gallon cost for the entire trip when travelling at 55mph is $ " + Totalcostat55 );
+   const Totalcostat60 = totalgallonsat60 * galloncost ;
+   console.log("Total gallon cost for the entire trip when travelling at 60mph  is $ " + Totalcostat60 );
+   
+   const Totalcostat75 = totalgallonsat75 * galloncost ;
+   console.log("Total gallon cost for the entire trip when travelling at 75mph is $ " + Totalcostat75 );
+
+   //checking if the budget will cover the total cost;
+
+   console.log("Checking if the budget will cover the fuel expense at 55mph " + (Totalcostat55 <= 175));
+   console.log("Checking if the budget will cover the fuel expense at 60mph " + (Totalcostat60 <= 175));
+   console.log("Checking if the budget will cover the fuel expense at 75mph " + (Totalcostat75 <= 175));
+
+   //Total time taken in hours
+
+   console.log("Total time taken when travelling at 55mph " + distance/55);
+   console.log("Total time taken when travelling at 55mph " + distance/60);
+   console.log("Total time taken when travelling at 55mph " + distance/75);
+
+   
