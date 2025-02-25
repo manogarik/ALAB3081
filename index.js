@@ -106,4 +106,6 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
    console.log("Total time taken when travelling at 55mph " + distance/60);
    console.log("Total time taken when travelling at 55mph " + distance/75);
 
+   console.log("As a result, we see that travelling at 55mph makes the most sense for the trip");
+
    
